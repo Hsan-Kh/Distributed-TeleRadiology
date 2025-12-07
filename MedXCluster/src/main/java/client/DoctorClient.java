@@ -11,7 +11,6 @@ public class DoctorClient extends JFrame implements MessageListener {
 
     // CONFIGURATION (MUST MATCH YOUR IMAGE!)
 
-    // If your Pituitary1.jpg is 512x512, change these numbers!
     private static final int IMAGE_WIDTH = 640;
     private static final int IMAGE_HEIGHT = 383;
     private static final int TOTAL_CHUNKS = 40; // Must match HospitalServer
@@ -102,4 +101,5 @@ public class DoctorClient extends JFrame implements MessageListener {
     }
 
 }
+
 
