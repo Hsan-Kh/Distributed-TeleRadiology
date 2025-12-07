@@ -9,8 +9,8 @@ import java.util.Scanner;
 /**
  * The CORBA Client.
  * Simulates a "Hospital Administrator" checking system status.
- * Requirement: "Utilisation console" + "CORBA"
  */
+
 public class AdminConsole {
 
     public static void main(String[] args) {
@@ -18,11 +18,9 @@ public class AdminConsole {
             System.out.println("--- Hospital Admin Console (CORBA) ---");
 
             // 1. Initialize ORB (Object Request Broker)
-            // This is the bridge that talks to the network.
             ORB orb = ORB.init(args, null);
 
             // 2. Read the Connection String (IOR) from file
-            // The server wrote this file when it started.
             File iorFile = new File("server.ior");
             if (!iorFile.exists()) {
                 System.err.println("ERROR: 'server.ior' not found!");
@@ -46,7 +44,6 @@ public class AdminConsole {
                 String input = scanner.nextLine();
 
                 if (input.equals("1")) {
-                    // This calls the C++ compatible interface!
                     String status = monitor.getStatus();
                     System.out.println(">> SERVER RESPONSE: " + status);
                 } else if (input.equals("2")) {
@@ -61,4 +58,5 @@ public class AdminConsole {
             e.printStackTrace();
         }
     }
+
 }
