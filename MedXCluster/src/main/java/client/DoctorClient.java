@@ -79,7 +79,6 @@ public class DoctorClient extends JFrame implements MessageListener {
                 int chunkHeight = chunk.processedPixels.length / IMAGE_WIDTH;
 
                 // 2. Calculate Y Offset
-                // We assume chunks are uniform, except maybe the last one
                 // Use the standard height for calculation to find the starting Y
                 int standardChunkHeight = IMAGE_HEIGHT / TOTAL_CHUNKS;
                 int yOffset = chunk.id * standardChunkHeight;
@@ -103,3 +102,4 @@ public class DoctorClient extends JFrame implements MessageListener {
     }
 
 }
+
