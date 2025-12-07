@@ -150,7 +150,6 @@ public class HospitalServer extends UnicastRemoteObject implements ComputeServic
             System.out.println("RMI Service Ready on port 1099...");
 
             // --- STEP E: Run CORBA in Background Thread ---
-            // If we don't do this, CORBA won't listen for requests!
             new Thread(() -> {
                 try {
                     orb.run();
@@ -165,3 +164,4 @@ public class HospitalServer extends UnicastRemoteObject implements ComputeServic
     }
 
 }
+
