@@ -9,11 +9,11 @@ import java.awt.image.BufferedImage;
 
 public class DoctorClient extends JFrame implements MessageListener {
 
-    // CONFIGURATION (MUST MATCH YOUR IMAGE!)
+    // CONFIGURATION 
 
     private static final int IMAGE_WIDTH = 640;
     private static final int IMAGE_HEIGHT = 383;
-    private static final int TOTAL_CHUNKS = 40; // Must match HospitalServer
+    private static final int TOTAL_CHUNKS = 40; 
 
     private BufferedImage displayImage;
     private JPanel panel;
@@ -74,7 +74,6 @@ public class DoctorClient extends JFrame implements MessageListener {
                 ProcessedChunk chunk = (ProcessedChunk) ((ObjectMessage) message).getObject();
 
                 // 1. Calculate the height of this specific strip
-                // Logic: Area = Width * Height -> Height = Area / Width
                 int chunkHeight = chunk.processedPixels.length / IMAGE_WIDTH;
 
                 // 2. Calculate Y Offset
@@ -101,5 +100,6 @@ public class DoctorClient extends JFrame implements MessageListener {
     }
 
 }
+
 
 
