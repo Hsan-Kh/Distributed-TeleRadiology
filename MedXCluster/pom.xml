@@ -30,7 +30,7 @@
             <version>2.0.1</version>
         </dependency>
 
-        <!-- 2. LOGGING (Required by ActiveMQ)          -->
+        <!-- 2. LOGGING (Required by ActiveMQ) -->
              
         <dependency>
             <groupId>org.slf4j</groupId>
