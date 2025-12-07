@@ -75,7 +75,6 @@ public class WorkerNode {
                 if (magnitude < 0) magnitude = 0;
 
                 // 7. Create the new pixel (Grayscale output)
-                // Alpha is always 255 (0xFF)
                 output[y * w + x] = (0xFF << 24) | (magnitude << 16) | (magnitude << 8) | magnitude;
             }
         }
@@ -83,3 +82,4 @@ public class WorkerNode {
     }
 
 }
+
