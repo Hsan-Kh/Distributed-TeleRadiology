@@ -73,7 +73,7 @@ Pour observer le comportement distribué complet, lancez les composants dans l'o
     *   *Action :* Ouvre une fenêtre graphique en attente de flux JMS.
 
 3.  **Client de Supervision CORBA (Optionnel) :**
-    *   Classe : `client.CorbaMonitor` (ou équivalent)
+    *   Classe : `client.AdminConsole` 
     *   *Action :* Se connecte au serveur via l'IOR et affiche l'état du système.
 
 4.  **Workers (Lancez-en 3 ou plus) :**
@@ -94,7 +94,7 @@ Le modèle **Publish-Subscribe** de JMS a été choisi pour le Dashboard afin d'
 Si le poste du médecin subit une latence réseau ou une déconnexion temporaire, cela ne bloque pas le processus de calcul côté serveur. De plus, cette architecture permettrait théoriquement de connecter plusieurs écrans de visualisation simultanément sans surcharge.
 
 ### Pourquoi CORBA ?
-Un module CORBA a été intégré pour démontrer l'interopérabilité du système (critère d'excellence). Il expose une interface standardisée (IDL) permettant à des systèmes externes (Legacy, C++, Python) de superviser la charge du serveur Java sans dépendre de la JVM.
+Un module CORBA a été intégré pour démontrer l'interopérabilité du système. Il expose une interface standardisée (IDL) permettant à des systèmes externes (Legacy, C++, Python) de superviser la charge du serveur Java sans dépendre de la JVM.
 
 ---
 
