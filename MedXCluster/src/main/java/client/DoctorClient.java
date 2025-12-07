@@ -9,9 +9,8 @@ import java.awt.image.BufferedImage;
 
 public class DoctorClient extends JFrame implements MessageListener {
 
-    // ==========================================
     // CONFIGURATION (MUST MATCH YOUR IMAGE!)
-    // ==========================================
+
     // If your Pituitary1.jpg is 512x512, change these numbers!
     private static final int IMAGE_WIDTH = 640;
     private static final int IMAGE_HEIGHT = 383;
@@ -100,7 +99,7 @@ public class DoctorClient extends JFrame implements MessageListener {
     }
 
     public static void main(String[] args) {
-        // Tip: Right-click your jpg -> Properties to find the real Width/Height
         new DoctorClient();
     }
+
 }
