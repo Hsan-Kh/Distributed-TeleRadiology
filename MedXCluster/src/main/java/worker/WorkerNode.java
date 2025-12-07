@@ -70,7 +70,7 @@ public class WorkerNode {
                 // 5. Calculate Magnitude (The "Strength" of the edge)
                 int magnitude = (int) Math.sqrt((pixelX * pixelX) + (pixelY * pixelY));
 
-                // 6. Clamp value to 0-255 (Keep it valid color range)
+                // 6. Clamp value to 0-255 
                 if (magnitude > 255) magnitude = 255;
                 if (magnitude < 0) magnitude = 0;
 
@@ -81,4 +81,5 @@ public class WorkerNode {
         }
         return output;
     }
+
 }
