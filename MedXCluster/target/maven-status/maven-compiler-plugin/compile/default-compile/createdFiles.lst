@@ -1,6 +1,0 @@
-worker\WorkerNode.class
-common\ProcessedChunk.class
-client\DoctorClient.class
-common\ImageChunk.class
-client\DoctorClient$1.class
-common\ComputeService.class
