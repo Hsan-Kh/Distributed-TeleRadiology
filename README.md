@@ -61,7 +61,7 @@ Avant de lancer l'application, assurez-vous qu'ActiveMQ est fonctionnel.
 mvn clean install
 ```
 
-### 3. Lancement des Modules
+### 3. Lancement 
 Pour observer le comportement distribué complet, lancez les composants dans l'ordre strict suivant (via votre IDE ou terminal) :
 
 1.  **Serveur Hospitalier :**
@@ -119,5 +119,5 @@ L'algorithme de **Filtre de Sobel** est utilisé pour la détection de contours.
 
 **Auteurs :**
 *   Hsan KHECHAREM
-*   Mouez JEDIDI
+*   Moez JEDIDI
 *   *Faculté des Sciences de Sfax*
